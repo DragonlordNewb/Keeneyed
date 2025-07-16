@@ -60,3 +60,25 @@ class Referent:
 			self.args = kwargs
 			for e in self.entities:
 				e.relations.append(self)
+
+class OntologicalNetwork:
+
+	class Query:
+
+		def __init__(self, **kwargs):
+			self.is_type = None
+			self.is_not_type = None
+			self.has_type_relation = None
+			self.has_not_type_relation = None
+			self.is_type_related_to = None
+			self.is_not_type_related_to = None
+			self.has_referent_relation = None
+			self.has_not_referent_relation = None
+			self.is_referent_related_to = None
+			self.is_not_referent_related_to = None
+			self.has_property = None
+			self.has_not_property = None
+			self.property_unknown = None
+			self.property_is = None
+			self.property_is_not = None
+			
